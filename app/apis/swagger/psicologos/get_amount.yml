@@ -1,0 +1,16 @@
+Valor total para as ações do psicologo no mês
+---
+tags:
+  - Ações
+responses:
+  200:
+    description: Retorna os montantes do psicologo do mês
+    examples:
+      application/json:
+        {
+          "montante_total": 123,
+          "montante_total_acoes": 123,
+          "montante_total_atendimentos": 123,
+          "montante_total_consultas": 123,
+          "valor_psi": 123,
+        }

@@ -1,0 +1,9 @@
+Valor total para as ações do psicologo no mês
+---
+tags:
+  - Ações
+responses:
+  200:
+    description: Retorna o valor total das ações do psicologo no mês
+    examples:
+      application/json: { "actions_total_value": 123.12 }

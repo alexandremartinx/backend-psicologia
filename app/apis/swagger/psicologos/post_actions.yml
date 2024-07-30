@@ -1,0 +1,25 @@
+Cria uma ação para o psicologo
+---
+tags:
+  - Ações
+definitions:
+  ActionCreate:
+    type: object
+    properties:
+      id_psicologo:
+        type: integer
+      acao_escolhida:
+        type: string
+      data:
+        type: string
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      $ref: "#/definitions/ActionCreate"
+responses:
+  201:
+    description: Cria uma ação para o psicologo
+    examples:
+      application/json: { "id": 1 }

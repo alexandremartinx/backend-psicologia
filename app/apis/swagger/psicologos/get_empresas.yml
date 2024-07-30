@@ -1,0 +1,9 @@
+Traz todas empresas
+---
+tags:
+  - Empresas
+responses:
+  200:
+    description: Retorna todas as empresas
+    examples:
+      application/json: [{ "empresa_id": 1, "empresa": "Nome empresa teste" }]

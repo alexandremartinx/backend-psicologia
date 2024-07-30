@@ -1,0 +1,47 @@
+tags:
+  - Colaboradores
+definitions:
+  ListAllCollaboratorServices:
+    type: array
+    items:
+      type: object
+      properties:
+        id_atendimento:
+          type: integer
+        psicologo:
+          type: string
+        empresa:
+          type: string
+        area:
+          type: string
+        setor:
+          type: string
+        cidade:
+          type: string
+        atendimento:
+          type: string
+        observacoes:
+          type: string
+        queixa_inicial:
+          type: string
+        colaborador:
+          type: string
+responses:
+  200:
+    description: todos atendimentos realizados para um colaborador
+    examples:
+      application/json:
+        [
+          {
+            "id_atendimento": 123,
+            "psicologo": "Teste",
+            "empresa": "Teste",
+            "area": "Teste",
+            "setor": "Teste",
+            "cidade": "Teste",
+            "atendimento": "Teste",
+            "observacoes": "Teste",
+            "queixa_inicial": "Teste",
+            "colaborador": "Teste",
+          },
+        ]

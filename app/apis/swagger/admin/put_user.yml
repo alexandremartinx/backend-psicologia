@@ -1,0 +1,17 @@
+Atualiza um usuário
+---
+tags:
+  - Usuários
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      $ref: "#/definitions/UserCreate"
+  - name: ID
+    in: path
+    type: string
+    required: true
+responses:
+  204:
+    description: Atualiza um usuário

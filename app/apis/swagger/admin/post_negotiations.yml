@@ -1,0 +1,23 @@
+Cria a negociação da empresa
+---
+tags:
+  - Negociações
+definitions:
+  NegociationCreate:
+    type: object
+    properties:
+      id_empresa:
+        type: integer
+      consultas_pagas:
+        type: integer
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      $ref: "#/definitions/NegociationCreate"
+responses:
+  201:
+    description: Cria a negociação da empresa
+    examples:
+      application/json: { "id": 1 }

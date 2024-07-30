@@ -1,0 +1,10 @@
+Retorna todas as negociações
+---
+tags:
+  - Negociações
+responses:
+  200:
+    description: Retorna as negociações
+    examples:
+      application/json:
+        [{ "id": 1, "empresa": "Teste", "negociacao": "uma sessao paga" }]

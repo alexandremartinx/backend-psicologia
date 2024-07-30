@@ -1,0 +1,28 @@
+Realiza o Login na API
+---
+tags:
+  - Auth
+
+definitions:
+  Login:
+    type: object
+    properties:
+      username:
+        type: string
+      password:
+        type: string
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      $ref: "#/definitions/Login"
+
+responses:
+  200:
+    description: Retorna o JWT
+    examples:
+      application/json:
+        {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjMsImVtcHJlc2FfaWQiOjEyMywibmFtZSI6IlRlc3RlIiwic2NwIjpbInBlcm1pc3NhbzEyMyIsInBlcm1pc3NhbzMyMSJdLCJleHAiOjE3MjA5OTU2OTQuMTAzNDU1fQ.9zMfQt9GvH9ttxS3eJw1Axa4b-EJtVBUfF4H3hQGJBc",
+        }

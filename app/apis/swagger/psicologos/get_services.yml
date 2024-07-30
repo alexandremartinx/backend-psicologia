@@ -1,0 +1,51 @@
+Todos os atendimentos do psicologo entre um periodo
+---
+tags:
+  - Atendimentos
+definitions:
+  ListServices:
+    type: array
+    items:
+      type: object
+      properties:
+        id_atendimento:
+          type: integer
+        colaborador:
+          type: string
+        psicologo:
+          type: string
+        empresa:
+          type: string
+        area:
+          type: string
+        setor:
+          type: string
+        cidade:
+          type: string
+        atendimento:
+          type: datetime
+        observacoes:
+          type: string
+        queixa_inicial:
+          type: string
+responses:
+  200:
+    description: Retorna todos os atendimentos do psicologo dentro do periodo
+    schema:
+      $ref: "#/definitions/ListServices"
+    examples:
+      application/json:
+        [
+          {
+            "id_atendimento": 1,
+            "colaborador": "Teste",
+            "psicologo": "Teste",
+            "empresa": "Teste",
+            "area": "Teste",
+            "setor": "Teste",
+            "cidade": "Teste",
+            "atendimento": "2024-01-01 12:00:00",
+            "observacoes": "Teste",
+            "queixa_inicial": "Teste",
+          },
+        ]

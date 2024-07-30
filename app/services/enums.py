@@ -1,0 +1,4 @@
+
+VALID_DOCUMENT_TYPES = [
+    'CNPJ'
+]

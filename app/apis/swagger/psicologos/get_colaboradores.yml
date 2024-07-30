@@ -1,0 +1,37 @@
+Todos os colaboradores
+---
+tags:
+  - Colaboradores
+definitions:
+  Colaboradores:
+    type: array
+    items:
+      type: object
+      properties:
+        cargo:
+          type: string
+        nome:
+          type: string
+        observacoes:
+          type: string
+        setor:
+          type: string
+        unidade:
+          type: string
+responses:
+  200:
+    description: Retorna todos os colaboradores cadastrados
+    schema:
+      $ref: "#/definitions/Colaboradores"
+    examples:
+      application/json:
+        [
+          {
+            "id": 1,
+            "cargo": "Desenvolvedor",
+            "nome": "Alexandre Martins",
+            "observacoes": "Muito bom ele",
+            "setor": "Desenvolvimento",
+            "unidade": "LEME",
+          },
+        ]

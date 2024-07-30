@@ -1,0 +1,37 @@
+Cria um atendimento para o psicologo
+---
+tags:
+  - Atendimentos
+definitions:
+  ServicesCreate:
+    type: object
+    properties:
+      collaborator_id:
+        type: integer
+      psychologist_id:
+        type: integer
+      company_id:
+        type: integer
+      area:
+        type: string
+      department:
+        type: string
+      city:
+        type: string
+      date_of_service:
+        type: string
+      annotations:
+        type: string
+      complaint:
+        type: string
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      $ref: "#/definitions/ServicesCreate"
+responses:
+  201:
+    description: Atendimento criado
+    examples:
+      application/json: { "id": 1 }

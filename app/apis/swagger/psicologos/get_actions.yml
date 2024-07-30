@@ -1,0 +1,9 @@
+Traz as ações do psicologo
+---
+tags:
+  - Ações
+responses:
+  200:
+    description: Retorna as ações do psicologo
+    examples:
+      application/json: [{ "id": 1, "acao": "podcast", "remuneracao": 123 }]
